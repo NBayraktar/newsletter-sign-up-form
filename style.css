@@ -93,12 +93,27 @@ p {
 .submit-btn:focus {
   background-color: var(--tomato);
   outline: none;
+  transition: 0.5s;
 }
 
-.label-text {
-  font-size: 0.8rem;
+.validation-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail-header-text,
+.mail-validation-text {
+  font-size: 0.75rem;
   font-weight: 700;
+}
+
+.mail-header-text {
   color: var(--charcoal-gray);
+}
+
+.mail-validation-text {
+  color: var(--tomato);
+  visibility: hidden;
 }
 
 .form {
